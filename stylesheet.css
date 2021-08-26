@@ -1,0 +1,22 @@
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.container h1 {
+  text-align: center;
+  color: red;
+}
+.container form {
+  text-align: center;
+}
+
+.container form .form-input {
+  width: 500px;
+}
+
+.list-style {
+  width: 500px;
+  margin: 20px 0;
+}
