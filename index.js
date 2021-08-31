@@ -23,8 +23,8 @@ form.addEventListener("submit", function (event) {
 
 // Todoを追加する
 function addTodo(todo) {
-  let todoText = input.value.trim();
-
+  let todoText = input.value;
+  todoText = todoText.replace(/\s+/g, "");
   if (todo) {
     todoText = todo.text;
   }
@@ -68,6 +68,5 @@ function saveData() {
     };
     todos.push(todo);
   });
-
   localStorage.setItem("todos", JSON.stringify(todos));
 }
